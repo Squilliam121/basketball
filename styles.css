@@ -1,0 +1,171 @@
+@font-face {
+	font-family: Sora;
+	src:url("assets/sora.ttf");
+}
+
+@keyframes Rotate {
+    from { transform: rotateZ(0deg); left: 0vw; }
+    to { transform: rotateZ(359deg); left: 100vw; }
+}
+
+html,body{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 100%;
+	weight: 100%;
+	overflow: hidden;
+}
+
+
+body.p1{
+	background-color: rgba(255,160,160,1.00);
+}
+
+body.p2{
+	background-color: rgba(255,174,0,1.00);
+}
+
+.text{
+	font-family: Sora;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img{
+	height: 400px;
+	width: auto;
+}
+
+.imgcontainer{
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,1.00);
+	width: 300px;
+	height: auto;
+	position: relative;
+}
+
+p{
+	margin: 0 200px;
+	text-align: justify;
+}
+
+a{
+	text-decoration: none;
+	font-weight: 700;
+	color: rgba(255,0,0,1.00)
+}
+
+a:hover{
+	color: rgba(127,0,2,1.00)
+}
+
+h1{
+	margin: 20px;
+}
+
+h2{
+	margin: 10px;
+}
+
+li{
+	margin: 0px;
+}
+
+.center{
+	text-align: center
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+nav li{
+	display: inline;
+	float: left;
+	padding: 14px 16px;
+	transition: background-color 0.3s ease;
+	border-radius: 10px;
+}
+
+nav li:hover{
+	background-color: rgba(255,71,74,1.00);
+}
+
+.active{
+	color: white;
+}
+
+.jamesimg{
+	height: 100%;
+	width: auto;
+	margin: 0px;
+	scale: 1.05;
+	opacity: 1;
+	transition: scale 0.3s ease, opacity 0.3s ease;
+}
+
+.jamesimg:hover{
+	scale: 1.15;
+	opacity: 0.4;
+}
+
+.stephimg{
+
+	margin: 0px;
+	scale: 1.05;
+	opacity: 1;
+	transition: scale 0.3s ease, opacity 0.3s ease;
+}
+
+.stephimg:hover{
+	scale: 1.15;
+	opacity: 0.4;
+}
+
+.jamestxt{
+	color: white;
+	position: absolute;
+	bottom: 120px;
+	left: 75px;
+	z-index: 0;
+	transition: opacity 0.3s ease;
+}
+
+.stephtxt{
+	color: white;
+	position: absolute;
+	bottom: 160px;
+	left: 95px;
+	z-index: 0;
+	transition: opacity 0.3s ease;
+}
+
+hr{
+	width: 200px;
+	height: 2px;
+	background-color: black;
+	border: 0;
+}
+
+#bballgif{
+	height: 50px;
+	width: auto;
+	bottom: 0px;
+	position: absolute;
+	animation-name: Rotate;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear
+}
